@@ -29,13 +29,19 @@ public class J1SH203 {
     
     static StringBuilder UpperCase(String s){
         StringBuilder result = new StringBuilder();
-        String ss[] = s.split("");    
+        String ss[] = s.split("");   
+        //Viết hoa chữ cái đầu
         for (int i=0; i<ss.length; i++) {
             if(i == 0){
                ss[i] = ss[i].toUpperCase();
             }
             result.append(ss[i]);
         }
+        //Viết hoa chữ cái đầu sau dấu cách
+//        for (String ss1 : ss) {
+//            result.append(Character.toUpperCase(ss1.charAt(0)))
+//                    .append(ss1.substring(1)).append(" ");
+//        } 
         return result;
     }
     
